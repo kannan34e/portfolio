@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    min-width:fit-content ;
+}
+a{
+    text-decoration: none;
+}
+
+/*NAV BAR*/
+.container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: fixed;
+    border: 1px solid lightgray;
+    background-color:lightgrey;
+    width: 100%;
+    height:50px;
+}
+.container a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+a::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: blue;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin:left ;
+    transition: transform 0.2s ;
+}
+a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/*HEADER*/
+
+.header{
+    background:linear-gradient(45deg,white,skyblue);
+    padding: 100px 40px 50px 50px; 
+    height: 680px; 
+}
+.header h1{
+    font-size: 40px;
+}
+.header h3{
+    font-size: 36px
+}
+.header p{
+    font-size:26px;
+    line-height: 35px;;
+}
+.btn{
+    width:170px ;
+    height:45px ;
+    font-size:20px;
+    background-color:skyblue; 
+    border: none; 
+    border-radius:10px;
+    margin-top: 2cm;
+    margin-left: 250px;
+}
+.btn a{
+    text-decoration: none;
+    color:black;
+}
+.btn a:hover{
+    color:white;
+}
+button:hover{
+    background-color: blue;
+}
+.about{
+    height: 500px;
+    background-color:white;
+    box-shadow: 10px 10px  25px -15px rgb(0,0,0.1);
+}
+.about p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    word-spacing: 5px;
+    text-align: center;
+}
+.about h1{
+    padding-top: 20px;
+    margin-left: 15cm;
+    color: black;
+}
+
+/*SKILLS*/
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px  25px -15px rgb(0,0,0.1);
+    padding:50px;
+    gap: 8%;
+}
+.right{
+    text-align: justify;
+    border: 2px solid black;
+    padding:3px;
+    line-height: 30PX;
+    word-spacing: 2px;
+    box-shadow: grey;
+}
+.right span{
+    color:red;
+    font-weight: bold;
+}
+.left{
+    text-align: justify;
+    border: 2px solid black;
+    padding:3px;
+    line-height: 30PX;
+    word-spacing: 2px;
+    box-shadow: grey;
+}
+.left span{
+    color:red;
+    font-weight: 500;
+}
+
+/*PROJECT*/
+.project-1{
+    height: 750px;
+    background-color: rgb(231, 231, 231) ;
+}
+
+.project-1 img{
+    width: 7cm;
+    height: 5cm;
+    margin-top: 30px;
+    border: 2px solid lightgrey;
+    margin-right: 20px;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add img{
+    box-shadow: 10px 10px  25px -15px rgb(0,0,0.1);
+}
+.digital h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.digital h3{
+    margin-top: 20px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.digital p{
+    padding-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CONTACT ME*/
+.con h2{
+    margin:0 0 20px 0;
+    padding-top:30px;
+    font-size: 22px;
+    color:black;
+    text-align: center;
+}
+.contactme{  
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+.flex-contact{    
+    margin-left:0%;
+    padding:30px 30px 30px 40px;
+    width: 28%;
+}
+.adress{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 200px;
+}
+.adress h3{
+    font-size: 16px;
+}
+.int:hover{
+    background-color: blue;
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px;
+    background-color:black;
+    color: white;
+}
+.icon{
+    display: flex;
+    gap: 2rem;
+    font-size: 20px;
+}
+
+
+
+
+
+
+@media(max-width:600px){
+    header{
+        background:linear-gradient(45deg,white,skyblue);
+        padding: 100px 40px 50px 50px; 
+        height: 100px; 
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .header h3{
+        font-size: 26px
+    }
+    .header p{
+        width: 500px;
+        font-size:16px;
+        line-height: 35px;;
+    }
+    .btn{
+        width:170px ;
+        height:45px ;
+        font-size:20px;
+        background-color:skyblue; 
+        border: none; 
+        border-radius:10px;
+        margin-top: 2cm;
+        margin-left: 1cm;
+    }
+    .btn a{
+        text-decoration: none;
+        color:black;
+    }
+    .btn a:hover{
+        color:white;
+    }
+    .about{
+        height: 500px;
+        background-color:white;
+        box-shadow: 10px 10px  25px -15px rgb(0,0,0.1);
+    }
+    .about p {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 2cm;
+        word-spacing: 5px;
+        text-align: center;
+        width: 450px;
+    }
+    .about h1{
+        padding-top: 20px;
+        margin-left: 5cm;
+        color: black;
+    }
+    /*SKILLS*/
+    .flex{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px  25px -15px rgb(0,0,0.1);
+    padding:50px;
+    gap: 2%;
+    }
+    .right{
+    text-align: justify;
+    border: 2px solid black;
+    padding:3px;
+    line-height: 30PX;
+    word-spacing: 2px;
+    box-shadow: grey;
+    }
+.right span{
+    color:red;
+    font-weight: bold;
+}
+.left{
+    text-align: justify;
+    border: 2px solid black;
+    padding:3px;
+    line-height: 30PX;
+    word-spacing: 2px;
+    box-shadow: grey;
+}
+.left span{
+    color:red;
+    font-weight: 500;
+}
+.project-1 img{
+    width: 5cm;
+    height: 3cm;
+    margin-top: 30px;
+    border: 2px solid lightgrey;
+    margin-right: 20px;
+}
+.contactme{  
+    padding-bottom: 30px;
+    height: 400px;
+}
+.flex-contact{    
+    margin-left:10%;
+    padding:30px 30px 30px 40px;
+    width: 28%;
+}
+.adress p{
+    font-size: 14px;
+}
+   
+
+}
